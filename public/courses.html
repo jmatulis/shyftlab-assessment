@@ -1,0 +1,41 @@
+<!-- Make default page--->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Courses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="students.html">Students</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="results.html">Results</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h1>My Courses</h1>
+            <form id="courseForm">
+                <label for="courseName">Course Name:</label>
+                <input type="text" id="courseName" name="courseName" required>
+                <label for="courseCode">Course Code:</label>
+                <input type="text" id="courseCode" name="courseCode" required>
+                <button type="submit">Submit</button>
+            </form>
+            <h2>Courses List</h2>
+            <table id="coursesList">
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Course Code</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <script src="courses.js"></script>
+</html>
